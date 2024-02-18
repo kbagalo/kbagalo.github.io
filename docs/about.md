@@ -1,15 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-nav-order: 1
+layout: page
+title: About Me
+permalink: /about/
+nav-order: 2
 ---
 
-### Kartikeya Shrikant Bagalore
-### Something
+## About Me
 
-### About Me
 I am a Staff Applied Research Scientist at ServiceNow, specializing in the field of Natural Language Processing (NLP). With a passion for leveraging machine learning and language technologies to solve real-world problems, I focus on advancing Language Models and related NLP techniques.
 
 ### Current Position
@@ -59,3 +56,4 @@ Check out my blog for articles, tutorials, and insights on NLP and related topic
 ## Disclaimer
 
 The views and opinions expressed on this website are solely my own and do not necessarily reflect the views or opinions of my employer.
+
