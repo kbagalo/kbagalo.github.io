@@ -21,4 +21,4 @@ Python · PyTorch · HuggingFace (PEFT, TRL) · vLLM · Triton Inference Server 
 
 - Email: <span data-email-user="kartikbagalore" data-email-domain="gmail.com">kartikbagalore [at] gmail [dot] com</span>
 - GitHub: [github.com/kbagalo](https://github.com/kbagalo)
-- LinkedIn: TODO: add LinkedIn URL
+- LinkedIn: [linkedin.com/in/kartikeyabagalore](https://www.linkedin.com/in/kartikeyabagalore/)
