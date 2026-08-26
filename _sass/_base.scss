@@ -1,0 +1,81 @@
+/* Theme tokens. Light is the bare :root default; dark is applied by OS
+   preference and by an explicit data-theme override from the toggle. */
+
+:root {
+  --bg:        #fbfbf9;
+  --text:      #1a1a1a;
+  --muted:     #55555f;
+  --accent:    #0b5394;
+  --rule:      #d8d8d2;
+  --code-bg:   #f0f0ec;
+}
+
+:root[data-theme="dark"] {
+  --bg:        #111214;
+  --text:      #e6e6e3;
+  --muted:     #a1a1aa;
+  --accent:    #86b7e8;
+  --rule:      #2c2e33;
+  --code-bg:   #1b1d21;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #111214;
+    --text:      #e6e6e3;
+    --muted:     #a1a1aa;
+    --accent:    #86b7e8;
+    --rule:      #2c2e33;
+    --code-bg:   #1b1d21;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  z-index: 10;
+}

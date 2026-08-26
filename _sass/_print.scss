@@ -1,0 +1,108 @@
+@media print {
+  /* Force a light, ink-efficient rendering regardless of screen theme. */
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #fff;
+    --text: #000;
+    --muted: #333;
+    --accent: #000;
+    --rule: #bbb;
+    --code-bg: #fff;
+  }
+
+  @page {
+    margin: 0.42in;
+  }
+
+  body {
+    font-size: 9pt;
+    line-height: 1.28;
+    background: #fff;
+    color: #000;
+  }
+
+  .nav,
+  .theme-toggle,
+  .footer,
+  .skip-link,
+  .site-tagline,
+  .download,
+  .back-link {
+    display: none !important;
+  }
+
+  .masthead,
+  main {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .masthead {
+    padding-top: 0;
+  }
+
+  main {
+    padding-top: 0.25rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /* Never spill URLs into the margins. */
+  a::after {
+    content: "" !important;
+  }
+
+  h1 {
+    font-size: 13pt;
+    margin-bottom: 0.1rem;
+  }
+
+  .page-title {
+    margin-bottom: 0.25rem;
+  }
+
+  h2 {
+    font-size: 9.5pt;
+    margin: 0.5rem 0 0.2rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid #999;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 9pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: 0.25rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.05rem;
+  }
+
+  .resume-role {
+    margin-top: 0.38rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .resume-dates {
+    margin-bottom: 0.15rem;
+    font-size: 9pt;
+  }
+}

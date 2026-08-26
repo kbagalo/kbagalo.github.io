@@ -1,0 +1,41 @@
+# Selected work. Add an entry by appending a block; index.md renders them in order.
+# Fields: title, blurb, tech (list), url (optional).
+
+- title: Agent-Bench — enterprise agentic evaluation
+  blurb: >-
+    Designed and built two benchmarks that evaluate frontier and open-source LLMs
+    across ITSM, HR, and CSM domains, scoring task completion, instruction following,
+    and response quality. This work leads agentic evaluation research at ServiceNow.
+  tech:
+    - Python
+    - PyTorch
+    - HuggingFace
+
+- title: NowAssist code generation
+  blurb: >-
+    Key contributor to a developer tool that generates ServiceNow code in the native
+    editor. LoRA fine-tuning on open-source models, aligned to internal best practices
+    with RLHF, with every experiment, dataset, and checkpoint tracked.
+  tech:
+    - HuggingFace PEFT
+    - TRL
+    - PyTorch
+    - WandB
+
+- title: LLM tuning framework
+  blurb: >-
+    Built the reproducibility and comparability layer for training and evaluation
+    experiments. It is now the de facto internal platform for all LLM experiments.
+  tech:
+    - Python
+    - PyTorch
+    - WandB
+
+- title: Production inference pipeline
+  blurb: >-
+    Own deployment end to end: the pre- and post-processing pipelines wrapped around
+    a vLLM backend served on Triton Inference Server.
+  tech:
+    - vLLM
+    - Triton Inference Server
+    - Docker

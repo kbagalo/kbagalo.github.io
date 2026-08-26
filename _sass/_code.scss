@@ -1,0 +1,52 @@
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875em;
+}
+
+code {
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Rouge tokens, tuned to inherit --text so both themes stay legible. */
+
+.highlight {
+  .c, .cm, .c1, .cs { color: var(--muted); font-style: italic; }
+  .k, .kd, .kn, .kp, .kr, .kt { color: var(--accent); font-weight: 600; }
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #2a7a4b; }
+  .m, .mf, .mh, .mi, .mo, .il { color: #9a5b00; }
+  .nf, .nc, .nn { color: var(--text); font-weight: 600; }
+  .o, .ow, .p { color: var(--text); }
+  .err { color: #b3261e; }
+}
+
+:root[data-theme="dark"] .highlight {
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #8fd3a3; }
+  .m, .mf, .mh, .mi, .mo, .il { color: #e0b062; }
+  .err { color: #f2b8b5; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .highlight {
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #8fd3a3; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #e0b062; }
+    .err { color: #f2b8b5; }
+  }
+}

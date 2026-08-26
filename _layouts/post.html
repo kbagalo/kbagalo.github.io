@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="page post">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </p>
+
+  {{ content }}
+
+  <p class="back-link"><a href="{{ '/notes/' | relative_url }}">&larr; All notes</a></p>
+</article>

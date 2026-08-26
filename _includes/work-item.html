@@ -1,0 +1,13 @@
+<article class="work-item">
+  <h3>
+    {%- if include.item.url -%}
+      <a href="{{ include.item.url }}">{{ include.item.title }}</a>
+    {%- else -%}
+      {{ include.item.title }}
+    {%- endif -%}
+  </h3>
+  <p>{{ include.item.blurb }}</p>
+  {%- if include.item.tech %}
+  <p class="tech">{{ include.item.tech | join: " · " }}</p>
+  {%- endif %}
+</article>

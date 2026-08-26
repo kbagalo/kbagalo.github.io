@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  {%- include head.html -%}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    {%- if page.url == '/' -%}
+    <h1 class="site-name">Kartikeya &ldquo;Kartik&rdquo; Bagalore</h1>
+    {%- else -%}
+    <p class="site-name"><a href="{{ '/' | relative_url }}">Kartikeya &ldquo;Kartik&rdquo; Bagalore</a></p>
+    {%- endif -%}
+    <p class="site-tagline">Staff Applied Research Scientist, Core&ndash;LLM @ ServiceNow &mdash; agentic evaluation, LLM fine-tuning, and production inference.</p>
+    {%- include nav.html -%}
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {%- include footer.html -%}
+  <script src="{{ '/assets/theme.js' | relative_url }}" defer></script>
+</body>
+</html>

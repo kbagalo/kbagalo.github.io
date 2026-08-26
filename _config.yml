@@ -1,0 +1,25 @@
+title: Kartikeya Bagalore
+description: Staff Applied Research Scientist — agentic evaluation, LLM fine-tuning, production inference.
+url: https://kbagalo.github.io
+author: Kartikeya Bagalore
+lang: en
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - plan.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
